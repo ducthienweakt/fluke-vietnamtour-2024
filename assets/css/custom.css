@@ -1,0 +1,159 @@
+/**
+ * Add your custom styles here
+**/
+#thank-text{
+    :before {
+        content: "";
+        background: url(../images/h1-sep.png) no-repeat;
+        display: block;
+        width: 150px;
+        height: 6px;
+        margin: 20px auto 20px;
+    }
+}
+
+.thank-text{
+    padding: 40px;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.footer-title{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.social-icons .btn:hover{
+
+    i{
+        color: #FFC20E;
+        border-color: #FFC20E;
+    }
+}
+
+#chartdiv {
+    background: #282828 url('https://www.amcharts.com/lib/3/patterns/chalk/bg.jpg');
+    color: #fff;	
+	width	: 100%;
+	height	: 100vh;
+    position: fixed;
+}	
+#chartdiv circle{
+    fill:#fff ;
+}
+
+
+.languages{
+    position: absolute;
+    display: inline-block;
+    padding-right: 20px;
+    right: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.languages:after{
+      content: "";
+      position: absolute;
+      top:16px;
+      right:25px;
+      margin-left:-5px;
+      border-top: 4px solid black;
+      border-top-color: #ccc; 
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;  
+      z-index:1;
+    }
+    .languages  .hover{
+      background: #e5e5e5;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      display: none;
+      margin-right: 5px;
+      padding: 0 5px;
+      line-height: 23px;
+    }
+    .languages   .current{
+      display:inline-block;
+      padding:0 20px 0 6px;
+      line-height: 22px;
+      font-size:14px;
+      font-weight:bold;
+      border:1px solid #ccc;   
+      color:#ccc; 
+      width: 120px;
+    }
+    .languages  ul{
+      background: #e5e5e5;
+      display:none;
+      width: 120px;
+      position: absolute;
+      margin:0;
+      padding:3px 0;
+      list-style:none;
+      font-size:13px;
+      top:100%;
+      z-index: 2;
+    }
+      .languages ul  a{
+      text-decoration: none;
+      padding:0px 10px 0 10px;
+      display:inline-block;
+      color:#333;
+      }
+      .languages ul  a.sel{
+        color:#ccc;
+      }
+      .languages ul  a.sel:hover{
+            color:#ccc;
+        }
+        
+        .languages ul  a:hover{
+        color:#000;
+        }    
+      
+ 
+  
+  
+    .languages:hover.hover{
+        display:inline-block;
+      
+      }
+      .languages:hover:after{
+      border-top-color: #000; 
+    }
+  
+    .fb-share-button-mobile{
+        display: none;
+        background: #1877f2;
+    }
+  
+  
+
+@media (max-width: 600px) {
+    .thank-text{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    g[transform='translate(10,10)']{
+        display: none;
+    }
+    
+    .fb-share-button{
+        display: none!important;
+    }
+    .fb-share-button-mobile{
+        display: inline-block;
+    }
+    .languages{
+        right: 0px;
+        margin-top: 0px;
+    }
+}

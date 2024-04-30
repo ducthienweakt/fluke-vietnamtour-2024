@@ -1,0 +1,809 @@
+/*
+------------------------------------------------------------------------
+Theme Name:    Karna
+Description:   Karna - Responsive coming Soon Template.
+Version:       1.0
+Author:        Sabiostar
+------------------------------------------------------------------------
+
+Updated:       Dec 10 2014
+Copyright:     (c) Sabiostar Inc
+
+All rights reserved.
+*/
+
+/* Import fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3c3c3c;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a img {
+    border: 0px solid;
+    outline: none;
+}
+
+a img::-moz-focus-inner, a::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+    padding: 0px;
+}
+
+hr {
+    clear: both;
+    margin-bottom: 25px;
+    border: 0;
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #eceeed;
+}
+
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.hidden {
+    display: none;
+}
+.opacity-1 {
+    opacity: 1 !important;
+}
+.opacity-0 {
+    opacity: 0 !important;
+}
+.rounded {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.square {
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.inline {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.legend {
+    color: #9C9C9C;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+.white {
+    background-color: #fff;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+    -webkit-transition: opacity 0.15s linear;
+}
+.ajax-response {
+    padding: 20px;
+    text-align: center;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+.form-control, .btn-default, .scroll-down, .panel-group .panel, .carousel-inner, .sb-form .form-group {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* Inputs styles */
+.form-control {
+    border: 1px solid #EEEEEE;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:hover, .form-control:focus {
+    border: 1px solid #BB9977;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*------------------------------------*\
+    $BUTTON STYLE
+\*------------------------------------*/
+.btn-default {
+    background: #FFC20E;
+    border: 0;
+    padding: 5px 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #031a51;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background: #FFC20E;
+    color: #031a51;
+}
+
+.btn-default:active {
+}
+
+.btn-default:focus {
+    outline: none !important;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 11px 16px;
+    font-weight: 700;
+}
+
+.btn-wide {
+    width: 100%;
+}
+
+
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+    padding-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 36px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    position: relative;
+}
+
+h5 {
+    font-size: 16px;
+    color: #6b6b6b;
+    position: relative;
+}
+
+h5:after {
+    content: '';
+    border-bottom: 1px solid #cecece;
+    height: 11px;
+    position: absolute;
+    margin-left: 6px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    position: relative;
+}
+
+h1.condensed {
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+h2.condensed {
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+h3.condensed {
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.bordered {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+
+/*------------------------------------*\
+    $TRANSITION EFFECTS
+\*------------------------------------*/
+a {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn-group:focus .btn.dropdown-toggle {
+    outline: none;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.btn:active,
+.btn.active:focus,
+.btn:focus,
+.btn:active:focus {
+    outline: none;
+}
+
+
+/* Columns */
+.container {
+    margin: 0 auto;
+}
+
+.container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Overlay Style */
+.backstretch {
+    position: fixed;
+}
+
+.backstretch:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/overlays/00.png) repeat;
+    position: absolute;
+}
+
+
+/*------------------------------------*\
+    $SECTION styles
+\*------------------------------------*/
+.home section {
+    padding: 60px 0 80px 0px;
+}
+
+.gray {
+    background-color: #f5f5f5;
+}
+
+.black {
+    background-color: #2F2F2A;
+    color: #fff;
+}
+
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5 {
+    color: #fff;
+}
+
+.primary-color{
+    color: #ffc20e;
+}
+
+.text-white{
+    color:#fff;
+}
+/*------------------------------------*\
+    $HOMEPAGE - INTRO SECTION
+\*------------------------------------*/
+#intro-section {
+    overflow: hidden;
+    color: #fff;
+    padding: 0px;
+}
+
+#intro-section h1 {
+    color: #fff;
+}
+
+#intro-section h1:after {
+    content: "";
+    background: url(../images/h1-sep.png) no-repeat;
+    display: block;
+    width: 150px;
+    height: 6px;
+    margin: 25px auto 0px;
+}
+
+#intro-section #welcome-text:after {
+    content: "";
+    background: url(../images/h1-sep.png) no-repeat;
+    display: block;
+    width: 150px;
+    height: 6px;
+    margin: 40px auto 0px;
+}
+
+#intro-section h1 span {
+    color: #ffc20e;
+}
+
+#welcome {
+    width: 100%;
+    text-align: center;
+}
+#welcome-wrap {
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    left: 0px;
+}
+
+
+#welcome-logo {
+    margin: 0px auto 40px;
+}
+
+#welcome-sponsor {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+#welcome-sponsor .sponsor-logo{
+    display: flex;
+    flex: 1 1 0;
+    height: 100px;
+}
+#welcome-sponsor .sponsor-logo:first-of-type{
+    justify-content: flex-end;
+}
+
+
+#intro-section .header-scroller {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 20;
+}
+
+#intro-section .header-scroller a {
+    color: #fff;
+    font-size: 20px;
+}
+
+#intro-section .header-scroller a:hover {
+    opacity: 0.7;
+}
+
+/*------------------------------------*\
+    $HOMEPAGE - COUNTDOWN
+\*------------------------------------*/
+
+#getting-started {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 0 20px;
+    border: 2px dashed #ffffff38;
+    max-width: 714px;
+    position: relative;
+}
+
+#getting-started > div {
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 23px;
+    border-right: 1px solid #bcbcbc;
+    padding: 0px 50px;
+}
+
+#getting-started > div:last-child {
+    border-right: 0px;
+}
+
+#getting-started > div > span {
+    font-size: 90px;
+    display: block;
+    line-height: 90px;
+}
+
+/*------------------------------------*\
+    $HOMEPAGE - SUBSCRIBE
+\*------------------------------------*/
+#subscribe-section .sb-form {
+    margin-top: 30px;
+}
+
+/*------------------------------------*\
+    $HOMEPAGE - FEATURES
+\*------------------------------------*/
+.start-carousel .item {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.start-carousel .item .inner-container {
+    padding-left: 80px;
+}
+
+.start-carousel .item .inner-container i.fa {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 41px;
+}
+
+/*------------------------------------*\
+    $HOMEPAGE - CONTACT
+\*------------------------------------*/
+#contact-section .contact-form {
+    margin-top: 30px;
+}
+
+/*------------------------------------*\
+    $HOMEPAGE - MAP
+\*------------------------------------*/
+#map {
+    border-bottom: 1px solid #42423d;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+#map.open-map {
+    height: 500px !important;
+}
+
+.map-field {
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+.map-field:hover {
+    background-color: #669999;
+}
+
+#map-canvas {
+    height: 500px;
+}
+
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+footer.footer {
+    font-size: 13px;
+    background: #031a51;
+    width: 100%;
+    padding: 25px 0px;
+    position: relative;
+}
+
+footer.footer,
+footer.footer a,
+footer.footer a:hover {
+    color: #a8a8a8;
+}
+
+
+/*------------------------------------*\
+    $SOCIAL ICONS
+\*------------------------------------*/
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons .btn {
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+}
+
+.social-icons .btn i {
+    background: transparent;
+    border: 1px solid #FFF;
+    color: #F8F8F8;
+    display: table-cell;
+    font-size: 20px;
+    height: 45px;
+    line-height: 1;
+    transition: all 200ms ease-in 0s;
+    vertical-align: middle;
+    width: 45px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.social-icons a:last-child {
+    margin-right: 0px;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+}
+
+/* .social-icons i.fa-twitter {
+    border-color: #70c2e9;
+    background: #70c2e9;
+    color: #FFFFFF;
+}
+
+.social-icons i.fa-twitter:hover {
+    border-color: #70c2e9;
+    background: #70c2e9;
+    color: #2B2D35;
+}
+
+.social-icons i.fa-facebook {
+    border-color: #677fb5;
+    background: #677fb5;
+    color: #FFFFFF;
+}
+
+.social-icons i.fa-facebook:hover {
+    border-color: #677fb5;
+    background: #677fb5;
+    color: #2B2D35;
+}
+
+.social-icons i.fa-instagram {
+    border-color: #d8545d;
+    background: #d8545d;
+    color: #FFFFFF;
+}
+
+.social-icons i.fa-instagram:hover {
+    border-color: #d8545d;
+    background: #d8545d;
+    color: #2B2D35;
+}
+
+.social-icons i.fa-dribbble {
+    border-color: #e299c2;
+    background: #e299c2;
+    color: #FFF;
+}
+
+.social-icons i.fa-dribbble:hover {
+    border-color: #e299c2;
+    background: #e299c2;
+    color: #2B2D35;
+} */
+
+
+/*------------------------------------*\
+    $GO TOP
+\*------------------------------------*/
+#toTop {
+    background: #2b2b25;
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 666;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+#toTop i {
+    padding: 8px 10px;
+}
+
+#toTop:hover {
+    opacity: 0.8;
+}
+
+
+/*=======================================================
+    Page Loader
+========================================================*/
+#preloader {
+    background: #1d1c1d;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 9999;
+}
+
+#status {
+    height: 250px;
+    left: 50%;
+    margin: -150px 0 0 -75px;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #d2d2d2;
+}
+
+#status img {
+    margin-bottom: 10px;
+}
+
+#status i {
+    color: #fff;
+    font-size: 28px;
+}
+
+
+/*------------------------------------*\
+    $Disable Animations
+\*------------------------------------*/
+.not-animated {
+    opacity:1 !important; 
+    visibility:visible !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -o-transition: color 0 ease-in !important;
+    transition: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+
+/*------------------------------------*\
+    $MEDIA QUERIES
+\*------------------------------------*/
+@media (max-width: 767px) {
+    #welcome-wrap {
+      top:20%;
+      transform: none;
+      -webkit-transform: none;
+    }
+    
+    #getting-started > div {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #welcome-wrap {
+        font-size:14px;
+    }
+    
+    #welcome-logo {
+      width:40%;
+    }
+    
+    #intro-section h1 {
+        font-size:24px;
+    }
+
+    #welcome-title{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    #welcome-sponsor .sponsor-logo{
+        height: 50px;
+    }
+
+   
+
+    #countdown-section h2{
+        font-size: 2rem;
+    }
+
+    #getting-started{
+        margin-top: 30px;
+        padding: 0;
+    }
+    
+    #subscribe-section{
+        padding: 140px 0 20px 0px
+    }
+
+    #subscribe-section h2{
+        font-size: 1.5rem;
+    }
+
+    #subscribe-section .sb-form{
+        margin-top: 0px;
+    }
+
+    .social-icons{
+        max-width: 242px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .social-icons .btn{
+        padding:6px
+    }
+    .social-icons .btn i{
+        width: 32px;
+        font-size: 14px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 479px) {
+    #getting-started > div {
+        padding: 0 20px;
+    }
+
+    #getting-started > div > span {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    #welcome-wrap {
+        margin-top:0px;
+    }
+
+   
+    #getting-started{
+        margin-top: -20px;
+        padding: 0;
+    }
+
+    #getting-started > div {
+        padding: 0 10px;
+    }
+
+    #getting-started > div > span {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
