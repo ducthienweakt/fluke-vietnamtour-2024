@@ -4,8 +4,8 @@
     * Preloader and welcome animation
     /* ---------------------------------------------- */
     $(window).load(function() {
-        $('#status').fadeOut(2000,()=>{});
-        $('#preloader').delay(2350).fadeOut("slow");
+        $('#status').fadeOut(1000,()=>{});
+        $('#preloader').delay(1350).fadeOut("slow");
         
         /* center Title on screen */
         $(".intro-title")
@@ -13,32 +13,27 @@
         
         setTimeout(function() {
           $(".intro-title").removeClass("opacity-0").addClass("fadeInUp");
-        }, 3000);
+        }, 1000);
         
         setTimeout(function() {
           $(".intro-title").removeClass("fadeInUp").addClass("fadeOut");
-        }, 6000); // time to show intro tet
+        }, 3000); // time to show intro tet
         
         setTimeout(function() {
           $(".intro-title").hide();
           $("#welcome-logo").addClass("fadeInUp").removeClass("opacity-0");
-        }, 7000);
+        }, 4000);
         
         setTimeout(function() {
           $("#welcome-text").addClass("fadeInUp").removeClass("opacity-0");
-        }, 8000);
+        }, 5000);
 
         setTimeout(function() {
           $("#welcome-title").addClass("fadeIn").removeClass("opacity-0");
-        }, 8500);
+        }, 5500);
         setTimeout(function() {
           $("#welcome-sponsor").addClass("fadeInUp").removeClass("opacity-0");
-        }, 9500);
-        setTimeout(function() {
-          $('html, body').stop().animate( {
-            'scrollTop': $('#countdown-section').offset().top-40
-          }, 600);
-        }, 13000);
+        }, 6500);
     });
     
     

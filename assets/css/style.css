@@ -61,6 +61,21 @@ hr {
     border-bottom: 1px solid #eceeed;
 }
 
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row-equal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-equal > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
 .right {
     float: right;
 }
@@ -325,13 +340,19 @@ a {
     color: #fff;
 }
 
+.blue {
+    background-color: #031a51;
+}
+
+.primary-color{
+    color: #ffc20e!important;
+}
+
+
 .dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5 {
     color: #fff;
 }
 
-.primary-color{
-    color: #ffc20e;
-}
 
 .text-white{
     color:#fff;
@@ -481,11 +502,166 @@ a {
     font-size: 41px;
 }
 
+/* ==========================================================================
+   Features 
+   ========================================================================== */
+   #features {
+        position: relative;
+   }
+
+
+
+   #features .featured-border1 {
+       border-bottom: 1px solid #ededed;
+       border-right: 1px solid #ededed;
+   }
+
+   #features .featured-border2 {
+       border-bottom: 1px solid #ededed;
+   }
+
+   #features .featured-border3 {
+       border-right: 1px solid #ededed;
+   }
+
+   #features .features-text{
+    margin-bottom: 50px;
+   }
+   
+   .p-0{
+    padding: 0!important;
+   }
+   .float-left{
+    float: left !important;
+   }
+
+   #features .feature-item {
+       background: #fff;
+       padding: 30px;
+       overflow: hidden;
+       -moz-transition: all .8s ease;
+       -webkit-transition: all .8s ease;
+       transition: all .8s ease;
+       height: 100%;
+   }
+
+   #features .feature-item .feature-icon-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+   }
+   #features .feature-item .feature-icon {
+    background: #ffc20e14;
+    padding: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffc20e;
+   }
+
+   #features .feature-item .feature-icon i {
+    font-size: 40px;
+    color: #ffc20e;
+    min-width: 40px;
+   }
+
+   #features .feature-item h4 {
+       font-size: 20px;
+       font-weight: 600;
+   }
+
+   #features .feature-item p {
+       font-size: 16px;
+       display: block;
+   }
+
+   #features .feature-item:hover {
+       box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
+       -moz-transition: all .8s ease;
+       -webkit-transition: all .8s ease;
+       transition: all .8s ease;
+   }
+
+   #features .feature-item:hover .feature-icon {
+       background: #ffc20e;
+       -moz-transition: all .8s ease;
+       -webkit-transition: all .8s ease;
+       transition: all .8s ease;
+   }
+
+   #features .feature-item:hover .feature-icon i {
+       color: #fff;
+       -moz-transition: all .8s ease;
+       -webkit-transition: all .8s ease;
+       transition: all .8s ease;
+   }
+  
+
+   
+  /* ==========================================================================
+     Features 
+     ========================================================================== */
+  
+/* Step */
+#step .row {
+    margin: 0;
+}
+
+#step .row > [class*='col-'] {
+    margin-bottom: 20px;
+}
+
+.step {
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    height: 100%;
+}
+
+.step .number {
+    background: #ffc20e;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.step p{
+    font-size: 14px;
+}
+
+
+.step p:last-child {
+    margin-bottom: 0px;
+}
+
+#map-section{
+    position: relative;
+}
+#map-section .map-img{
+    margin: 0 auto;
+    max-height: calc(100vh - 140px);
+}
+
 /*------------------------------------*\
     $HOMEPAGE - CONTACT
 \*------------------------------------*/
+#contact-section{
+    position: relative;
+}
+
 #contact-section .contact-form {
     margin-top: 30px;
+}
+
+#contact-section .policy-text{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
 }
 
 /*------------------------------------*\
