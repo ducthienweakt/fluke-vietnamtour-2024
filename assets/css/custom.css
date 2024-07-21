@@ -141,6 +141,8 @@
     .thank-text{
         font-size: 1.2rem;
         line-height: 2rem;
+        padding-top:0px;
+        padding-bottom: 20px;
     }
     g[transform='translate(10,10)']{
         display: none;

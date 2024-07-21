@@ -887,7 +887,7 @@ footer.footer a:hover {
 \*------------------------------------*/
 @media (max-width: 767px) {
     #welcome-wrap {
-      top:20%;
+      top:90px;
       transform: none;
       -webkit-transform: none;
     }
@@ -911,16 +911,21 @@ footer.footer a:hover {
     }
 
     #welcome-title{
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 25px;
     }
     #welcome-sponsor{
         flex-direction: column;
-        row-gap: 27px;
+        row-gap: 7px;
         align-items: center;
     }
+    #welcome-sponsor .sponsor-logo{
+        height: auto;
+    }
+
     #welcome-sponsor .sponsor-logo img{
-        max-width: 200px;
+        width: 140px;
     }
 
    
