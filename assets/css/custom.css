@@ -134,10 +134,67 @@
         display: none;
         background: #1877f2;
     }
-  
-  
 
+#stat-section p{
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 26px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.stat-card-row{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+.stat-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #f9f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    min-height: 162px;
+    justify-content: center;
+}
+.stat-card-highlight{
+    background: #ffb524;
+}
+.stat-card-highlight .stat-card-number{
+    color: #3c3c3c;
+}
+.stat-card-title{
+    font-weight: bold;
+}
+.stat-card-number{
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffb524;
+    line-height: 60px;
+}
+.stat-card-text{
+    font-weight: bold;
+}
+.stat-vid{
+    margin-top: 40px;
+}
+.stat-vid iframe{
+    aspect-ratio: 16 / 9;
+    max-width: 800px!important;
+    width: 100% !important;
+}
+  
 @media (max-width: 600px) {
+  
     .thank-text{
         font-size: 1.2rem;
         line-height: 2rem;
